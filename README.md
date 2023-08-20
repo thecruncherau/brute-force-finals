@@ -1,6 +1,6 @@
 # brute-force-finals
 
-![image](https://github.com/thecruncherau/brute-force-finals/assets/73578941/d42fa7e3-c0d0-4288-bf01-45908e323f94)
+![image](https://github.com/thecruncherau/brute-force-finals/assets/73578941/f69a50ff-ba33-4093-a9e0-707218c6381a)
 
 A script originally designed for checking all finishes to the NRL season, though is fairly easy to adapt to other sports too.
 
