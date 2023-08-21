@@ -81,9 +81,8 @@ function run_permutation(permutation::Vector{Bool})::Possibility
     )
 end
 
-# PATH TO PREDICTIONS FILE: CHANGE THIS YOURSELF (required cols are hteam ateam hscore ascore)
+# PATH TO PREDICTIONS FILE: CHANGE THIS YOURSELF (required cols are hteam ateam hscore ascore agg_probs)
 file_path = "predictions.csv"
-
 
 file = CSV.File(file_path, missingstring = "NA")
 nrl_data = file |> DataFrame
@@ -163,7 +162,7 @@ println("All done!")
 
 ### ANALYSIS HERE ###
 
-["Sea Eagles", "Roosters", "Eels", "Cowboys", "Knights", "Sharks", "Raiders", "Rabbitohs", "Storm"] .|> 
+teams .|> 
     (team -> begin
         println()
 
